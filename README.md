@@ -414,4 +414,5 @@ For issues and questions:
 ---
 
 **HackHome Academy Backend** - Powering the future of crypto-based education! 🎓⚡#   h a c k h o m e - b a c k e n d  
+ #   h a c k h o m e - b a c k e n d  
  
