@@ -1,0 +1,22 @@
+[Unit]
+Description=Hack Academy Telegram Bot
+After=network.target
+After=mongodb.service
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/workspace
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=PYTHONPATH=/workspace
+ExecStart=/usr/bin/python3 /workspace/start_bot.py
+Restart=always
+RestartSec=10
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=hack-academy-bot
+
+[Install]
+WantedBy=multi-user.target
